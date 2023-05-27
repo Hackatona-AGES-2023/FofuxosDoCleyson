@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizz.ai</title>
     <script src="./scripts/btnDifficulty.js"></script>
+    <script src="./scripts/events/sendTheme.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
+    <style> 
+        @font-face {
+           font-family: myFirstFont;
+           src: url(sansation_light.woff);
+        }
+        
+        * {
+           font-family: myFirstFont;
+        }
+        </style>
 </head>
 <body>
     <div class="app">
         <div class="title">
-            <img src="" alt="logo">
+            <img src="../images/logoprincipal.png" alt="logo" class="logoImg">
         </div>
         <div class="description">
-            Escreva um tema que você deseja estudar que nós criaremos perguntas!
+            Tornando o aprendizado mais simples!
         </div>
         <div class="mainInput">
-            <input type="text" placeholder="Escreva um tema">
+            <input type="text" placeholder="Escreva um tema" id="mainInput">
         </div>
         <div class="buttons">
             <button onclick="onOff('.Easy')" class="Easy" id="btnDifficulty">Fácil</button>
@@ -25,17 +36,20 @@
             <button onclick="onOff('.Hard')" class="Hard" id="btnDifficulty">Difícil</button>      
         </div>
     </div>
-    <template id="question">
+    <!--<template id="question">-->
         <div class="everything">
             <div class="header">
-                <img src="" alt="logo">
+                <img src="../images/Logosecundária.png" id="secondaryLogo"alt="logo">
                 <div class="questionNumber"></div>
             </div>
             <div class="appQuestion">
                 <div class="mainText">
                     <div class="mainQuestion">
                     </div>
-                        <input type="text" class="answer">
+                    <div class="answerBox">
+                        <textarea type="text" class="answer" placeholder="Escreva sua resposta:" maxlength="400"></textarea>
+                    </div>
+                        <button class="submit">Enviar</button>
                         <div class="result">
                             <div class="adjustment">
                                 <div class="adjustmentText"></div>
@@ -45,18 +59,18 @@
                         </div>
                 </div>
                 <div class="arrows">
-                    <button class="arrow" id="upArrow">
-                        <img src="" alt="upArrow">
+                    <button class="arrow" id="upArrow" onclick="scroll(-1024)">
+                        <img src="../images/setapracima.png" alt="upArrow">
                     </button>
-                    <button class="arrow" id="downArrow">
-                        <img src="" alt="downArrow">
+                    <button class="arrow" id="downArrow" onclick="scroll(1024)">
+                        <img src="../images/setaprabaixo.png" alt="downArrow">
                     </button>
                 </div>
             </div>
             
         </div>
         
-    </template>
+   <!-- </template>-->
     <div class="questions">
 
     </div>

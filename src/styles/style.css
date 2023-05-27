@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(to right, #A852C3, #56106D);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 70%;
+  margin-left: 15%; 
+  margin-top: 2%;
+  
+}
+.logoImg{
+  height: 30%;
+  width: 100%;
+  margin-top: 24%;
+}
+.description{
+  margin-top: -20%;
+  font-size: 40px;
+  color: white;
+}
+.buttons{
+  display: flex;
+  width: 438px;
+  height: 31px;
+  justify-content: space-between;
+}
+@font-face {
+    font-family: firstfont;
+    src: url("fonts/cocosharp/Coco-Sharp-Regular-trial.ttf")format('truetype')
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ *{
+    font-family: myFirstFont;
+ }
+
+#btnDifficulty{
+  width: 70px;
+  height: 31px;
+  background-color: transparent;
+  border: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: white;
+  font-family: myFirstFont;
+  
+}
+#mainInput{
+  width: 880px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 134px;
+  border-color: white;
+  border-width: 4px;
+  border-style: solid;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: white;
+  padding-left: 64px;
+  outline: none;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+::placeholder {
+  color: white;
+  opacity: 1; 
+}
+.everything{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E1E1E;
+}
+.header{
+  display: flex;
+  width: 100vw;
+  height: 84px;
+}
+#secondaryLogo{
+  height: 84px;
+  width: 311px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+}
+.appQuestion{
+  display: flex;
+  height: 400px;
+  width: 1000px;
+  position: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 150px;
+}
+.answerBox{
+  width: 956px;
+  height: 313px;
+  background-color: #d9d9d90f;
+  border-radius: 63px;
+  outline: none;
+  border-width: 0px;
+}
+.answer{
+  width: 900px;
+  height: 313px;
+  background-color: transparent;
+  outline: none;
+  border-width: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color:white;
+  padding-left: 3.2%;
+  padding-top: 3.5%;
+}
+.submit{
+  align-items: center;
+  margin-left: 40%;
+  height: 66px;
+  width: 196px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  background-color: #06F31E;
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+  font-size: 40px;
+  margin-top: 5%;
+}
