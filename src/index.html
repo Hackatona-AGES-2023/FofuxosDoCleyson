@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizz.ai</title>
-    <script src="./scripts/btnDifficulty.js"></script>
-    <link rel="stylesheet" href="./styles/style.css">
-    <style> 
-        @font-face {
-           font-family: myFirstFont;
-           src: url(sansation_light.woff);
-        }
-        
-        * {
-           font-family: myFirstFont;
-        }
-        </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <div class="app">
-        <div class="title">
-            <img src="../images/logoprincipal.png" alt="logo" class="logoImg">
-        </div>
-        <div class="description">
-            Tornando o aprendizado mais simples!
-        </div>
-        <div class="mainInput">
-            <input type="text" placeholder="Escreva um tema" id="mainInput">
-        </div>
-        <div class="buttons">
-            <button onclick="onOff('.Easy')" class="Easy" id="btnDifficulty">Fácil</button>
-            <button onclick="onOff('.Medium')" class="Medium" id="btnDifficulty">Médio</button>
-            <button onclick="onOff('.Hard')" class="Hard" id="btnDifficulty">Difícil</button>      
-        </div>
+      <div class="title">
+        <img src="../images/logoprincipal.png" alt="logo" class="logoImg" />
+      </div>
+      <div class="description">Tornando o aprendizado mais simples!</div>
+      <div class="mainInput">
+        <input type="text" placeholder="Escreva um tema" id="mainInput" />
+      </div>
+      <div class="buttons">
+        <button onclick="onOff('.Easy')" class="Easy isToggled" id="btnDifficulty">
+          Fácil
+        </button>
+        <button onclick="onOff('.Medium')" class="Medium" id="btnDifficulty">
+          Médio
+        </button>
+        <button onclick="onOff('.Hard')" class="Hard" id="btnDifficulty">
+          Difícil
+        </button>
+      </div>
     </div>
     <!--<template id="question">-->
         <div class="everything" id="question">
@@ -69,11 +62,40 @@
             </div>
             
         </div>
+
+        <div class="everything" id="question">
+            <div class="appQuestion">
+                <div class="mainText">
+                    <div class="mainQuestion">
+                    </div>
+                    <div class="answerBox">
+                        <textarea type="text" class="answer" placeholder="Escreva sua resposta:" maxlength="400"></textarea>
+                    </div>
+                        <button class="submit">Enviar</button>
+                        <div class="result">
+                            <div class="adjustment">
+                                <div class="adjustmentText"></div>
+                                <img src="" alt="answer" class="adjustmentImage">
+                            </div>
+                            <div class="explaining"></div>
+                        </div>
+                </div>
+                <div class="arrows">
+                    <button class="arrow" id="upArrow" onclick="scroll(-1024)">
+                        <img src="../images/Arrow1.png" id="arrowup" alt="upArrow">
+                    </button>
+                    <button class="arrow" id="downArrow" onclick="scroll(1024)">
+                        <img src="../images/Arrow1.png" id="arrowdown" alt="downArrow">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
         
    <!-- </template>-->
     <div class="questions">
 
-    </div>
-    <script src="./scripts/events/sendTheme.js"></script>
-</body>
+    <script src="./scripts/btnDifficulty.js"></script>
+    <script src="./scripts/api.js"></script>
+  </body>
 </html>
