@@ -15,11 +15,12 @@ body{
 
 }
 .logoImg{
-  height: 75%;
-  width: 600px;
-  margin-top: 7%;
+  height: 30%;
+  width: 100%;
+  margin-top: 24%;
 }
 .description{
+  margin-top: -20%;
   font-size: 20px;
 }
 .buttons{
