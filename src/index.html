@@ -17,7 +17,7 @@
         <input type="text" placeholder="Escreva um tema" id="mainInput" />
       </div>
       <div class="buttons">
-        <button onclick="onOff('.Easy')" class="Easy" id="btnDifficulty">
+        <button onclick="onOff('.Easy')" class="Easy isToggled" id="btnDifficulty">
           Fácil
         </button>
         <button onclick="onOff('.Medium')" class="Medium" id="btnDifficulty">
@@ -35,6 +35,35 @@
                 <div class="questionNumber"></div>
             </div>
             <div class="headerdivision"></div>
+            <div class="appQuestion">
+                <div class="mainText">
+                    <div class="mainQuestion">
+                    </div>
+                    <div class="answerBox">
+                        <textarea type="text" class="answer" placeholder="Escreva sua resposta:" maxlength="400"></textarea>
+                    </div>
+                        <button class="submit">Enviar</button>
+                        <div class="result">
+                            <div class="adjustment">
+                                <div class="adjustmentText"></div>
+                                <img src="" alt="answer" class="adjustmentImage">
+                            </div>
+                            <div class="explaining"></div>
+                        </div>
+                </div>
+                <div class="arrows">
+                    <button class="arrow" id="upArrow" onclick="scroll(-1024)">
+                        <img src="../images/Arrow1.png" id="arrowup" alt="upArrow">
+                    </button>
+                    <button class="arrow" id="downArrow" onclick="scroll(1024)">
+                        <img src="../images/Arrow1.png" id="arrowdown" alt="downArrow">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="everything" id="question">
             <div class="appQuestion">
                 <div class="mainText">
                     <div class="mainQuestion">
