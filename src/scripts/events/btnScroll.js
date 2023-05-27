@@ -1,13 +1,13 @@
 function scrollDown(){
-    let x = document.getElementById("#count");
-    x.value = x.value+1;
+    let x = document.querySelector("#count").innerHTML;
+    x++
     document.querySelectorAll(".everything")[x].scrollIntoView({behavior:"smooth"});
     
 }
 
 function scrollUp(){
-    const x = document.getElementById("#count").value;
-    x.value = x.value-1;
+    const x = document.getElementById("#count").innerHTML;
+    x--
     document.querySelectorAll(".everything")[x].scrollIntoView({behavior:"smooth"});
     
 }
