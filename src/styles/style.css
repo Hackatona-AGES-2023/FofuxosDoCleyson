@@ -14,7 +14,15 @@ body{
   margin-top: 2%;
 
 }
-
+.logoImg{
+  height: 30%;
+  width: 100%;
+  margin-top: 24%;
+}
+.description{
+  margin-top: -20%;
+  font-size: 20px;
+}
 .buttons{
   display: flex;
   width: 438px;
@@ -29,4 +37,25 @@ body{
   font-size: 34px;
   cursor: pointer;
   color: white;
+}
+#mainInput{
+  width: 884px;
+  height: 77px;
+  background-color: transparent;
+  border-radius: 134px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: white;
+  padding-left: 64px;
+  outline: none;
+}
+::placeholder {
+  color: white;
+  opacity: 1; 
 }
