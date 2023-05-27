@@ -1,9 +1,9 @@
 import correctAnswer from './apiCorrection.js';
 
-const inputsAnswer = document.querySelectorAll(".answer");
 
-function submitHandler(question, index) {
-  const answerText = inputsAnswer[index].value;
+export function submitHandler(question, index) {
+  const inputsAnswer = document.querySelectorAll(".answer");
+  const answerText = inputsAnswer[index].value.toString();
   correctAnswer(question, answerText);
 }
 

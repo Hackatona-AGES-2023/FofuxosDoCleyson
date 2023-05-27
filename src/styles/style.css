@@ -43,11 +43,15 @@ body{
   height: 31px;
   background-color: transparent;
   border: none;
+  color: white;
   font-size: 34px;
   cursor: pointer;
-  color: white;
   font-family: 'Cutive Mono', monospace;
-  
+}
+.isToggled {
+
+  color: black;
+  transform: 0px 10px;
 }
 #mainInput{
   width: 880px;
@@ -87,6 +91,10 @@ body{
   display: flex;
   width: 100vw;
   height: 84px;
+}
+.mainQuestion {
+  color: white;
+  margin: 15px;
 }
 #secondaryLogo{
   height: 84px;
@@ -148,6 +156,12 @@ body{
   background-color: #56106D;
   margin-top: 2%;
 }
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 #arrowup{
   height: 30px;
   transform: rotate(180deg);
@@ -160,5 +174,5 @@ body{
   border-width:  0px;
   cursor: pointer;
   border-radius: 100px;
-
 }
+

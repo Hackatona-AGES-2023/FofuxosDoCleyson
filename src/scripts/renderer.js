@@ -1,4 +1,4 @@
-import submitHandler from './events/submitHandler.js';
+import {submitHandler} from './events/submitHandler.js';
 
 const answerStatus = document.querySelector(".adjustmentText");
 const answerText = document.querySelector(".explaning");
@@ -16,9 +16,7 @@ export function renderQuestions(questions) {
     const div = template.content.cloneNode(true);
     div.querySelector(".questionNumber").innerText = index + 1;
     div.querySelector(".mainQuestion").innerText = question;
-    div.querySelector(".submit").onclick = function () {
-      submitHandler(question, index);
-    };
+    div.querySelector(".submit").onclick = function () {submitHandler(question, index);}
     questionsBox.appendChild(div);
   });
 }
@@ -36,3 +34,6 @@ export function renderAnswer(status, explainingText) {
 
 
 export default { renderQuestions, renderAnswer}
+
+
+

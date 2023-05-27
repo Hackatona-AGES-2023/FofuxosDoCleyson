@@ -15,7 +15,7 @@ const generateQuiz = async (theme, difficulty) => {
   const prompt = `Gere um quiz de 10 perguntas ${difficulty} sem as respostas sobre ${theme}.`;
 
   try {
-    const apiKey = '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';
+    const apiKey = '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';
     const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; // URL do endpoint da API da OpenAI
 
     const response = await fetch(endpoint, {
