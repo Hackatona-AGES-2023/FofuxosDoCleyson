@@ -11,6 +11,7 @@ export function renderQuestions(questions) {
     div.querySelector(".questionNumber").innerText = index + 1;
     div.querySelector(".mainQuestion").innerText = question;
     div.querySelector(".submit").onclick = function () {submitHandler(question, index);}
+    document.getElementById(".submit").style.display = "none";//mudança talvez quebre o código
     questionsBox.appendChild(div);
   });
   scrollFirst();
