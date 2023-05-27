@@ -104,6 +104,7 @@ body{
   align-items: center;
   flex-direction: row;
   margin-top: 150px;
+  color: white;
   font-family: 'Cutive Mono', monospace;
 }
 .answerBox{
