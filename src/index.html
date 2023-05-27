@@ -7,6 +7,16 @@
     <title>Quizz.ai</title>
     <script src="./scripts/btnDifficulty.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
+    <style> 
+        @font-face {
+           font-family: myFirstFont;
+           src: url(sansation_light.woff);
+        }
+        
+        * {
+           font-family: myFirstFont;
+        }
+        </style>
 </head>
 <body>
     <div class="app">
@@ -25,17 +35,18 @@
             <button onclick="onOff('.Hard')" class="Hard" id="btnDifficulty">Difícil</button>      
         </div>
     </div>
-    <template id="question">
+    <!--<template id="question">-->
         <div class="everything">
             <div class="header">
-                <img src="../images/Logosecundária.png" alt="logo">
+                <img src="../images/Logosecundária.png" id="secondaryLogo"alt="logo">
                 <div class="questionNumber"></div>
             </div>
             <div class="appQuestion">
                 <div class="mainText">
                     <div class="mainQuestion">
                     </div>
-                        <input type="text" class="answer">
+                        <input type="text" class="answer" placeholder="Escreva sua resposta:">
+                        <button class="submit">Enviar</button>
                         <div class="result">
                             <div class="adjustment">
                                 <div class="adjustmentText"></div>
@@ -45,10 +56,10 @@
                         </div>
                 </div>
                 <div class="arrows">
-                    <button class="arrow" id="upArrow">
+                    <button class="arrow" id="upArrow" onclick="scroll(-1024)">
                         <img src="../images/setapracima.png" alt="upArrow">
                     </button>
-                    <button class="arrow" id="downArrow">
+                    <button class="arrow" id="downArrow" onclick="scroll(1024)">
                         <img src="../images/setaprabaixo.png" alt="downArrow">
                     </button>
                 </div>
@@ -56,7 +67,7 @@
             
         </div>
         
-    </template>
+   <!-- </template>-->
     <div class="questions">
 
     </div>

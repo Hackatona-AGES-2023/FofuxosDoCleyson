@@ -19,6 +19,7 @@ const correctAnswer = async (question, answer) => {
 
     const quizQuestions = res.data.choices[0].message.content;
     console.log(quizQuestions);
+    return quizQuestions;
   } catch (error) {
     console.error(error);
   }
