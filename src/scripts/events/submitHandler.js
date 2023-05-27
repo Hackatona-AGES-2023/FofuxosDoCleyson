@@ -1,3 +1,5 @@
+import correctAnswer from './apiCorrection.js';
+
 const inputsAnswer = document.querySelectorAll(".answer");
 
 function submitHandler(question, index) {
@@ -6,4 +8,4 @@ function submitHandler(question, index) {
   correctAnswer(question, answerText);
 }
 
-export default { submitHandler };
+export default {submitHandler};

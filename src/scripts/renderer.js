@@ -1,3 +1,5 @@
+import submitHandler from './events/submitHandler.js';
+
 const answerStatus = document.querySelector(".adjustmentText");
 const answerText = document.querySelector(".explaning");
 const questionsBox = document.querySelector(".questions");
@@ -7,9 +9,8 @@ const adjustmentText = document.querySelector(".adjustmentText");
 const explaining = document.querySelector(".explaining");
 const answer = document.querySelector(".answer");
 
-function renderQuestions(questions) {
+export function renderQuestions(questions) {
   questionsBox.innerHTML = "";
-  const questions = questions;
 
   questions.forEach((question, index) => {
     const div = template.content.cloneNode(true);
@@ -24,7 +25,7 @@ function renderQuestions(questions) {
   });
 }
 
-function renderAnswer(status, explainingText) {
+export function renderAnswer(status, explainingText) {
   if (status == true) {
     adjustmentText.innerText = "Correto";
     resultImage.src = "../images/Botãocorreto.png";
@@ -34,3 +35,6 @@ function renderAnswer(status, explainingText) {
     explaining.innerText = explainingText;
   }
 }
+
+
+export default { renderQuestions, renderAnswer}
