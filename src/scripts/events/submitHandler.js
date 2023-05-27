@@ -5,3 +5,5 @@ function submitHandler(question, index) {
 
   correctAnswer(question, answerText);
 }
+
+export default { submitHandler };

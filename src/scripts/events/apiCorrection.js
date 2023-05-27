@@ -25,4 +25,4 @@ const correctAnswer = async (question, answer) => {
   }
 };
 
-correctAnswer(question, answer);
+export default { correctAnswer };

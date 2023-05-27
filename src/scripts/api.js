@@ -28,4 +28,4 @@ const generateQuiz = async (theme, difficulty) => {
   }
 };
 
-generateQuiz("revolução industrial", "medias");
+export default { generateQuiz };
