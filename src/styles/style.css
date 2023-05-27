@@ -1,6 +1,7 @@
 body{
   background-color: purple;
-  height: 90vh;
+  height: 100vh;
+  width: 100vw;
 }
 .app{
   background-color: aqua;
@@ -59,4 +60,23 @@ body{
 ::placeholder {
   color: white;
   opacity: 1; 
+}
+.everything{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(686666);
+}
+.header{
+  display: flex;
+  width: 100vw;
+  height: 84px;
+}
+#secondaryLogo{
+  height: 84px;
+  width: 311px;
+  display: flex;
+  justify-content: flex-start;
 }
