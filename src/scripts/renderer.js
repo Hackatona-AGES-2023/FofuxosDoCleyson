@@ -19,6 +19,7 @@ export function renderQuestions(questions) {
     div.querySelector(".submit").onclick = function () {submitHandler(question, index);}
     questionsBox.appendChild(div);
   });
+  scrollDown();
 }
 
 export function renderAnswer(status, explainingText) {

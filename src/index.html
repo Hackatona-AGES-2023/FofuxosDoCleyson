@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <div class="count" id="count" style="display: none;">0</div>
     <div class="app">
         <div class="title">
             <img src="../images/logoprincipal.png" alt="logo" class="logoImg">
@@ -48,10 +49,10 @@
                         </div>
                 </div>
                 <div class="arrows">
-                    <button class="arrow" id="upArrow" onclick="scroll(-1024)">
+                    <button class="arrow" id="upArrow" onclick="scrollUp()">
                         <img src="../images/Arrow1.png" id="arrowup" alt="upArrow">
                     </button>
-                    <button class="arrow" id="downArrow" onclick="scroll(1024)">
+                    <button class="arrow" id="downArrow" onclick="scrollDown()">
                         <img src="../images/Arrow1.png" id="arrowdown" alt="downArrow">
                     </button>
                 </div>
@@ -65,6 +66,7 @@
     </div>
 
     <script src="./scripts/btnDifficulty.js"></script>
+    <script src="./scripts/events/btnScroll.js"></script>
     <script type="module" src="./scripts/renderer.js"></script>
     <script type="module" src="./scripts/api.js"></script>
     <script type="module" src="./scripts/events/apiCorrection.js"></script>
