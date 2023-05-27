@@ -23,10 +23,10 @@ export function renderAnswer(status, explainingText, index) {
   const resultImage = document.querySelectorAll(".adjustmentImage");
   const answer = document.querySelectorAll(".answer");
   if (status == true) {
-    adjustmentText.innerHTML = "Correto";
-    resultImage.src = "../images/Botãocorreto.png";
+    adjustmentText[index].innerHTML = "Você acertou! Parabéns!";
+    resultImage[index].src = "../images/Botãocorreto.png";
   } else {
-    adjustmentText[index].innerHTML = "Incorreto";
+    adjustmentText[index].innerHTML = "Você errou :(";
     resultImage[index].src = "../images/Botãoincorreto.png";
     answer[index].value = explainingText;
   }

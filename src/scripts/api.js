@@ -1,9 +1,10 @@
 import {renderQuestions} from './renderer.js'
 
 const inputBox = document.querySelector('#mainInput')
-const selectedButton = document.querySelector('.isToggled');
+
 
 inputBox.addEventListener('keypress', (e) => {
+  const selectedButton = document.querySelector('.isToggled');
   if(e.key == 'Enter') {
     generateQuiz(inputBox.value, selectedButton.innerText);
   }
@@ -15,7 +16,7 @@ const generateQuiz = async (theme, difficulty) => {
   const prompt = `Gere um quiz de 10 perguntas ${difficulty} sem as respostas sobre ${theme}.`;
 
   try {
-    const apiKey = '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';
+    const apiKey = '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';
     const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions'; // URL do endpoint da API da OpenAI
 
     const response = await fetch(endpoint, {

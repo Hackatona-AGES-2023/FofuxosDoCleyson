@@ -183,6 +183,23 @@ body{
   background-color: #56106D;
   margin-top: 2%;
 }
+.adjustment{
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.adjustmentImage{
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+}
+.adjustmentText{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 32px;
+  margin-top: 2%;
+  vertical-align: middle;
+}
 
 .arrows {
   display: flex;
