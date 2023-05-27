@@ -10,8 +10,9 @@ export function renderQuestions(questions) {
     const div = template.content.cloneNode(true);
     div.querySelector(".questionNumber").innerText = index + 1;
     div.querySelector(".mainQuestion").innerText = question;
-    div.querySelector(".submit").onclick = function () {submitHandler(question, index);}
-    document.getElementById(".submit").style.display = "none";//mudança talvez quebre o código
+    div.querySelector(".submit").onclick = function () {submitHandler(question, index)}
+    //div.querySelector("#submit").style.display = "none";//mudança talvez quebre o código
+    
     questionsBox.appendChild(div);
   });
   scrollFirst();

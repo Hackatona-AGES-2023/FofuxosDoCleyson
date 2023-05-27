@@ -172,7 +172,7 @@ body{
   font-weight:bold;
 }
 .submit:hover{
-  box-shadow: 15px 15px #06f31e8b ;
+  box-shadow:0 5px 15px rgba(20, 184, 91, 0.4); ;
 }
 .headerdivision{
   width: 100%;
