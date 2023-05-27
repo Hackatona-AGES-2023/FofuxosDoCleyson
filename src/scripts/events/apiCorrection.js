@@ -1,30 +1,23 @@
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
 const question = "Quando aconteceu a Revolução Francesa?";
-const answer = "1906"
+const answer = "1789";
 
 const correctAnswer = async (question, answer) => {
-  const prompt = `corrija a resposta "${answer} para a pergunta ${question}. antes de sua resposta coloque correto ou incorreto dependendo se a pergunta estiver certa ou não e depois explique"`;
+  const prompt = `verifique se a resposta ${answer} para a pergunta ${question} está minimamente correta. antes de sua resposta coloque correto caso a resposta esteja correta ou incorreto caso contrario, e caso esteja incorreta, explique a resposta"`;
 
   try {
-    const res = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: prompt,
-      temperature: 0.5,
-      max_tokens: 1000,
-      top_p: 1.0,
-      n: 10,
-      frequency_penalty: 0.0,
-      presence_penalty: 0.0,
-      stop: "",
+    const res = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "user", content: prompt }],
     });
 
-    const quizQuestions = res.data.choices[0].text.split("\n");
+    const quizQuestions = res.data.choices[0].message.content;
     console.log(quizQuestions);
   } catch (error) {
     console.error(error);
