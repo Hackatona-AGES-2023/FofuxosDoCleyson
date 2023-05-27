@@ -1,0 +1,15 @@
+.buttons{
+  display: flex;
+  width: 438px;
+  height: 31px;
+  justify-content: space-between;
+}
+#btnDifficulty{
+  width: 70px;
+  height: 31px;
+  background-color: transparent;
+  border: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: white;
+}
