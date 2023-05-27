@@ -12,7 +12,6 @@ body{
   width: 70%;
   margin-left: 15%; 
   margin-top: 2%;
-
 }
 .logoImg{
   height: 30%;
@@ -39,12 +38,12 @@ body{
   color: white;
 }
 #mainInput{
-  width: 884px;
-  height: 75px;
+  width: 880px;
+  height: 70px;
   background-color: transparent;
   border-radius: 134px;
   border-color: white;
-  border-width: 3px;
+  border-width: 4px;
   border-style: solid;
   font-style: normal;
   font-weight: 400;
