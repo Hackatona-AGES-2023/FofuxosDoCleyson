@@ -1,9 +1,10 @@
 function onOff(button) {
-  button = document.querySelector(button);
-
-  if (!button.classList.contains("isToggled")) {
+  const button1 = document.querySelector(button);
+  console.log(button1)
+  if (!button1.classList.contains("isToggled")) {
     desligaOAnterior();
-    button.classList.add("isToggled");
+    button1.classList.add("isToggled");
+    button1.style.color = 'black';
   }
 }
 
@@ -12,5 +13,8 @@ function desligaOAnterior() {
 
   if (botaoAnterior) {
     botaoAnterior.classList.remove("isToggled");
+    botaoAnterior.style.color = 'white';
   }
 }
+
+document.querySelector('.isToggled').style.color = 'black';
