@@ -1,3 +1,10 @@
+body{
+  background-color: purple;
+}
+.app{
+  background-color: aqua;
+}
+
 .buttons{
   display: flex;
   width: 438px;
