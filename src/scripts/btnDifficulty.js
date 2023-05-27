@@ -4,8 +4,7 @@ function onOff(button) {
   if (!button.classList.contains("isToggled")) {
     desligaOAnterior();
     button.classList.add("isToggled");
-  } else {
-    button.classList.remove("isToggled");
+    button.style.color = 'black';
   }
 }
 
@@ -14,5 +13,6 @@ function desligaOAnterior() {
 
   if (botaoAnterior) {
     botaoAnterior.classList.remove("isToggled");
+    botaoAnterior.style.color = 'white';
   }
 }
