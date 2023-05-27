@@ -1,17 +1,17 @@
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
-const generateQuiz = async () => {
-  const prompt = "Gere um quiz de 10 perguntas sobre quimica orgânica.";
+const generateQuiz = async (theme, difficulty) => {
+  const prompt = `Gere um quiz de 10 perguntas ${difficulty} sem as respostas sobre ${theme}.`;
 
   try {
     const res = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: prompt,
+      prompt,
       temperature: 0.5,
       max_tokens: 1000,
       top_p: 1.0,
@@ -28,4 +28,4 @@ const generateQuiz = async () => {
   }
 };
 
-generateQuiz();
+generateQuiz("revolução industrial", "medias");
