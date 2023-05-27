@@ -21,6 +21,7 @@ export function renderQuestions(questions) {
     };
     questionsBox.appendChild(div);
   });
+  scrollDown();
 }
 
 export function renderAnswer(status, explainingText) {
