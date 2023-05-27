@@ -6,22 +6,15 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const question = "Quando aconteceu a Revolução Francesa?";
-const answer = "1906"
+const answer = "1789"
 
 const correctAnswer = async (question, answer) => {
-  const prompt = `corrija a resposta "${answer} para a pergunta ${question}. antes de sua resposta coloque correto ou incorreto dependendo se a pergunta estiver certa ou não e depois explique"`;
+  //const prompt = `corrija a resposta "${answer} para a pergunta ${question}. antes de sua resposta coloque correto ou incorreto dependendo se a pergunta estiver certa ou não e depois explique"`;
 
   try {
     const res = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: prompt,
-      temperature: 0.5,
-      max_tokens: 1000,
-      top_p: 1.0,
-      n: 10,
-      frequency_penalty: 0.0,
-      presence_penalty: 0.0,
-      stop: "",
+      model: "gpt-3.5-turbo",
+      
     });
 
     const quizQuestions = res.data.choices[0].text.split("\n");
@@ -29,6 +22,8 @@ const correctAnswer = async (question, answer) => {
   } catch (error) {
     console.error(error);
   }
+
+
 };
 
 correctAnswer(question, answer);
