@@ -1,6 +1,8 @@
+
 body{
   background-color: purple;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 .app{
   background-color: aqua;
@@ -28,6 +30,18 @@ body{
   height: 31px;
   justify-content: space-between;
 }
+@font-face {
+    font-family: firstfont;
+    src: url("fonts/cocosharp/Coco-Sharp-Regular-trial.ttf")format('truetype')
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ *{
+    font-family: myFirstFont;
+ }
+
 #btnDifficulty{
   width: 70px;
   height: 31px;
@@ -36,6 +50,8 @@ body{
   font-size: 34px;
   cursor: pointer;
   color: white;
+  font-family: myFirstFont;
+  
 }
 #mainInput{
   width: 880px;
