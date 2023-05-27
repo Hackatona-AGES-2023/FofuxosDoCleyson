@@ -21,7 +21,7 @@ body{
 }
 .description{
   margin-top: -20%;
-  font-size: 20px;
+  font-size: 22px;
 }
 .buttons{
   display: flex;
@@ -40,7 +40,7 @@ body{
 }
 #mainInput{
   width: 884px;
-  height: 77px;
+  height: 75px;
   background-color: transparent;
   border-radius: 134px;
   border-color: white;
@@ -54,6 +54,8 @@ body{
   color: white;
   padding-left: 64px;
   outline: none;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 ::placeholder {
   color: white;
