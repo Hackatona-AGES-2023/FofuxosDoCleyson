@@ -17,15 +17,15 @@ export function renderQuestions(questions) {
 }
 
 export function renderAnswer(status, explainingText, index) {
-  const adjustmentText = document.querySelector(".adjustmentText"); 
-  const resultImage = document.querySelector(".adjustmentImage");
+  const adjustmentText = document.querySelectorAll(".adjustmentText"); 
+  const resultImage = document.querySelectorAll(".adjustmentImage");
   const answer = document.querySelectorAll(".answer");
   if (status == true) {
     adjustmentText.innerHTML = "Correto";
     resultImage.src = "../images/Botãocorreto.png";
   } else {
-    adjustmentText.innerHTML = "Incorreto";
-    resultImage.src = "../images/Botãoincorreto.png";
+    adjustmentText[index].innerHTML = "Incorreto";
+    resultImage[index].src = "../images/Botãoincorreto.png";
     answer[index].value = explainingText;
   }
 }

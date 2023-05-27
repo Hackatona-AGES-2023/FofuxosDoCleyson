@@ -4,8 +4,6 @@ function onOff(button) {
   if (!button.classList.contains("isToggled")) {
     desligaOAnterior();
     button.classList.add("isToggled");
-  } else {
-    button.classList.remove("isToggled");
   }
 }
 
