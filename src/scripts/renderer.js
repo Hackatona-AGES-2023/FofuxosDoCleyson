@@ -25,9 +25,14 @@ export function renderAnswer(status, explainingText, index) {
   if (status == true) {
     adjustmentText[index].innerHTML = "Você acertou! Parabéns!";
     resultImage[index].src = "../images/Botãocorreto.png";
+    resultImage[index].style.width = "48px"
+    resultImage[index].style.height = "48px"
+
   } else {
     adjustmentText[index].innerHTML = "Você errou :(";
     resultImage[index].src = "../images/Botãoincorreto.png";
+    resultImage[index].style.width = "48px"
+    resultImage[index].style.height = "48px"
     answer[index].value = explainingText;
   }
 }
