@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 * {
   margin: 0;
 }
@@ -7,7 +8,7 @@ body{
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cutive Mono', monospace;
 }
 .app{
   display: flex;
@@ -29,6 +30,7 @@ body{
   margin-top: -20%;
   font-size: 40px;
   color: white;
+  font-family: 'Cutive Mono', monospace;
 }
 .buttons{
   display: flex;
@@ -36,18 +38,6 @@ body{
   height: 31px;
   justify-content: space-between;
 }
-@font-face {
-    font-family: firstfont;
-    src: url("fonts/cocosharp/Coco-Sharp-Regular-trial.ttf")format('truetype')
-}
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
- }
- *{
-    font-family: myFirstFont;
- }
-
 #btnDifficulty{
   width: 70px;
   height: 31px;
@@ -56,7 +46,7 @@ body{
   font-size: 34px;
   cursor: pointer;
   color: white;
-  font-family: myFirstFont;
+  font-family: 'Cutive Mono', monospace;
   
 }
 #mainInput{
@@ -77,10 +67,12 @@ body{
   outline: none;
   margin-top: 2%;
   margin-bottom: 5%;
+  font-family: 'Cutive Mono', monospace;
 }
 ::placeholder {
   color: white;
   opacity: 1; 
+  font-family: 'Cutive Mono', monospace;
 }
 .everything{
   display: flex;
@@ -89,6 +81,7 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: #1E1E1E;
+  font-family: 'Cutive Mono', monospace;
 }
 .header{
   display: flex;
@@ -110,6 +103,7 @@ body{
   align-items: center;
   flex-direction: row;
   margin-top: 150px;
+  font-family: 'Cutive Mono', monospace;
 }
 .answerBox{
   width: 956px;
@@ -131,6 +125,7 @@ body{
   color:white;
   padding-left: 3.2%;
   padding-top: 3.5%;
+  font-family: 'Cutive Mono', monospace;
 }
 .submit{
   align-items: center;
@@ -145,6 +140,7 @@ body{
   color: white;
   font-size: 40px;
   margin-top: 5%;
+  font-family: 'Cutive Mono', monospace;
 }
 .headerdivision{
   width: 100%;
