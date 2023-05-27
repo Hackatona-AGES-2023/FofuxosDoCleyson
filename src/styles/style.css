@@ -126,13 +126,14 @@ body{
 .submit{
   align-items: center;
   margin-left: 40%;
+  margin-top: 5%;
   height: 66px;
   width: 196px;
   display: flex;
   justify-content: center;
   padding-left: 10px;
   background-color: #06F31E;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 40px 40px 40px 40px;
   color: white;
   font-size: 40px;
 }
