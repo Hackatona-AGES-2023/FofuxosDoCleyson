@@ -1,13 +1,7 @@
 import {submitHandler} from './events/submitHandler.js';
 
-const answerStatus = document.querySelector(".adjustmentText");
-const answerText = document.querySelector(".explaning");
 const questionsBox = document.querySelector(".questions");
 const template = document.querySelector("#question");
-const resultImage = document.querySelector(".adjustmentImage");
-const adjustmentText = document.querySelector(".adjustmentText");
-const explaining = document.querySelector(".explaining");
-const answer = document.querySelector(".answer");
 
 export function renderQuestions(questions) {
   questionsBox.innerHTML = "";
@@ -22,14 +16,17 @@ export function renderQuestions(questions) {
   scrollFirst();
 }
 
-export function renderAnswer(status, explainingText) {
+export function renderAnswer(status, explainingText, index) {
+  const adjustmentText = document.querySelector(".adjustmentText"); 
+  const resultImage = document.querySelector(".adjustmentImage");
+  const answer = document.querySelectorAll(".answer");
   if (status == true) {
-    adjustmentText.innerText = "Correto";
+    adjustmentText.innerHTML = "Correto";
     resultImage.src = "../images/Botãocorreto.png";
   } else {
-    adjustmentText.innerText = "Incorreto";
+    adjustmentText.innerHTML = "Incorreto";
     resultImage.src = "../images/Botãoincorreto.png";
-    explaining.innerText = explainingText;
+    answer[index].value = explainingText;
   }
 }
 

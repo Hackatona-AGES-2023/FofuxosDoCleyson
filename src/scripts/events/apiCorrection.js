@@ -1,11 +1,12 @@
 import { renderAnswer } from "../renderer.js";
 
-const correctAnswer = async (question, answer) => {
+const correctAnswer = async (question, answer, index) => {
   const prompt = `verifique se a resposta ${answer} para a pergunta ${question} está minimamente correta. antes de sua resposta coloque correto caso a resposta esteja correta ou incorreto caso contrário, e caso esteja incorreta, explique a resposta"`;
   try {
-    const apiKey = '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';
-    const endpoint = 'https://api.openai.com/v1/engines/gpt-3.5-turbo/completions'; // URL do endpoint da API da OpenAI
+    const apiKey = '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';
+    const endpoint = 'https://api.openai.com/v1/chat/completions'; // URL do endpoint da API da OpenAI
 
+    console.log(apiKey)
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
@@ -13,21 +14,25 @@ const correctAnswer = async (question, answer) => {
         'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        messages: [{ role: 'user', content: prompt }]
+          "model": "gpt-3.5-turbo",
+          "messages": [
+            {
+              "role": "user",
+              "content": prompt
+            }
+          ]
+        
       })
     });
     const data = await response.json();
     const quizAnswer = data.choices[0].message.content;
-    console.log(quizQuestions);
     var status = quizAnswer.match(/^(.*?)\./);
     var feedback = quizAnswer.match(/\.(.*)/);
-    var correct;
-    if (status == 'Correto'){
+    var correct = false;
+    if (status[1].toLowerCase() == 'correto'){
       correct = true;
-    }else if (status == 'Incorreto') {
-      correct = false;
     }
-    renderAnswer(correct, feedback)
+    renderAnswer(correct, feedback[1], index)
   } catch (error) {
     console.error(error);
   }
