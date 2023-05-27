@@ -3,7 +3,7 @@ import { renderAnswer } from "../renderer.js";
 const correctAnswer = async (question, answer, index) => {
   const prompt = `verifique se a resposta ${answer} para a pergunta ${question} está minimamente correta. antes de sua resposta coloque correto caso a resposta esteja correta ou incorreto caso contrário, e caso esteja incorreta, explique a resposta"`;
   try {
-    const apiKey = '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';
+    const apiKey = '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';
     const endpoint = 'https://api.openai.com/v1/chat/completions'; // URL do endpoint da API da OpenAI
 
     console.log(apiKey)
@@ -35,6 +35,7 @@ const correctAnswer = async (question, answer, index) => {
     renderAnswer(correct, feedback[1], index)
   } catch (error) {
     console.error(error);
+    throw error;
   }
 };
 
