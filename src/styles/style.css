@@ -2,53 +2,41 @@
   margin: 0;
 }
 
-body{
-  background-image: linear-gradient(to right, #A852C3, #56106D);
+body {
+  background-image: linear-gradient(to right, #a852c3, #56106d);
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.app{
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   height: 100%;
   width: 70%;
-  margin-left: 15%; 
+  margin-left: 15%;
   margin-top: 2%;
-  
 }
-.logoImg{
+.logoImg {
   height: 30%;
   width: 100%;
   margin-top: 24%;
 }
-.description{
+.description {
   margin-top: -20%;
   font-size: 40px;
   color: white;
 }
-.buttons{
+.buttons {
   display: flex;
   width: 438px;
   height: 31px;
   justify-content: space-between;
 }
-@font-face {
-    font-family: firstfont;
-    src: url("fonts/cocosharp/Coco-Sharp-Regular-trial.ttf")format('truetype')
-}
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
- }
- *{
-    font-family: myFirstFont;
- }
 
-#btnDifficulty{
+#btnDifficulty {
   width: 70px;
   height: 31px;
   background-color: transparent;
@@ -57,9 +45,8 @@ body{
   cursor: pointer;
   color: white;
   font-family: myFirstFont;
-  
 }
-#mainInput{
+#mainInput {
   width: 880px;
   height: 70px;
   background-color: transparent;
@@ -80,29 +67,29 @@ body{
 }
 ::placeholder {
   color: white;
-  opacity: 1; 
+  opacity: 1;
 }
-.everything{
+.everything {
   display: flex;
   height: 100vh;
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
-.header{
+.header {
   display: flex;
   width: 100vw;
   height: 84px;
 }
-#secondaryLogo{
+#secondaryLogo {
   height: 84px;
   width: 311px;
   display: flex;
   justify-content: flex-start;
   margin-left: 2%;
 }
-.appQuestion{
+.appQuestion {
   display: flex;
   height: 400px;
   width: 1000px;
@@ -111,7 +98,7 @@ body{
   flex-direction: row;
   margin-top: 150px;
 }
-.answerBox{
+.answerBox {
   width: 956px;
   height: 313px;
   background-color: #d9d9d90f;
@@ -119,7 +106,7 @@ body{
   outline: none;
   border-width: 0px;
 }
-.answer{
+.answer {
   width: 900px;
   height: 313px;
   background-color: transparent;
@@ -128,11 +115,11 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color:white;
+  color: white;
   padding-left: 3.2%;
   padding-top: 3.5%;
 }
-.submit{
+.submit {
   align-items: center;
   margin-left: 40%;
   height: 66px;
@@ -140,7 +127,7 @@ body{
   display: flex;
   justify-content: center;
   padding-left: 10px;
-  background-color: #06F31E;
+  background-color: #06f31e;
   border-radius: 30px 30px 30px 30px;
   color: white;
   font-size: 40px;
