@@ -1,4 +1,7 @@
 function scroll(x){
-    document.querySelectorAll("#question")[x].scrollIntoView();
-    
+    window.scrollBy({
+        top:x,
+        left:0,
+        behavior:"smooth"
+    })
 }
