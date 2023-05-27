@@ -1,12 +1,12 @@
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
-const question = "Quando aconteceu a Revolução Francesa?";
-const answer = "1789";
+const question = "Quanto é 5";
+const answer = "25";
 
 const correctAnswer = async (question, answer) => {
   const prompt = `verifique se a resposta ${answer} para a pergunta ${question} está minimamente correta. antes de sua resposta coloque correto caso a resposta esteja correta ou incorreto caso contrario, e caso esteja incorreta, explique a resposta"`;
