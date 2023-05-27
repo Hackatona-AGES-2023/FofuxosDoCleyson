@@ -152,3 +152,17 @@ body{
   background-color: #56106D;
   margin-top: 2%;
 }
+#arrowup{
+  height: 30px;
+  transform: rotate(180deg);
+}
+#arrowdown{
+  height: 30px;
+}
+.arrow{
+  background-color: #d9d9d907;
+  border-width:  0px;
+  cursor: pointer;
+  border-radius: 100px;
+
+}
