@@ -8,6 +8,8 @@ body{
   width: 100vw;
   overflow-x: hidden;
   font-family: 'Cutive Mono', monospace;
+  background-position: center;
+  background-size: cover;
 }
 .app{
   display: flex;
