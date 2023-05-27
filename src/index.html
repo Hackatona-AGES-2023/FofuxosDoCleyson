@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz.ai</title>
+    <script src="./scripts/btnDifficulty.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="title">
+            <img src="" alt="logo">
+        </div>
+        <div class="description">
+            Escreva um tema que você deseja estudar que nós criaremos perguntas!
+        </div>
+        <div class="mainInput">
+            <input type="text" placeholder="Escreva um tema">
+        </div>
+        <div class="buttons">
+            <button onclick="onOff('.Easy')" class="Easy" id="btnDifficulty">Fácil</button>
+            <button onclick="onOff('.Medium')" class="Medium" id="btnDifficulty">Médio</button>
+            <button onclick="onOff('.Hard')" class="Hard" id="btnDifficulty">Difícil</button>      
+        </div>
+    </div>
+    <template id="question">
+        <div class="everything">
+            <div class="header">
+                <img src="" alt="logo">
+                <div class="questionNumber"></div>
+            </div>
+            <div class="appQuestion">
+                <div class="mainText">
+                    <div class="mainQuestion">
+                    </div>
+                        <input type="text" class="answer">
+                        <div class="result">
+                            <div class="adjustment">
+                                <div class="adjustmentText"></div>
+                                <img src="" alt="answer" class="adjustmentImage">
+                            </div>
+                            <div class="explaining"></div>
+                        </div>
+                </div>
+                <div class="arrows">
+                    <button class="arrow" id="upArrow">
+                        <img src="" alt="upArrow">
+                    </button>
+                    <button class="arrow" id="downArrow">
+                        <img src="" alt="downArrow">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </template>
+    <div class="questions">
+
+    </div>
+</body>
+</html>
